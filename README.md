@@ -20,7 +20,7 @@
 ## 🎉 Progress Record
 
 
-|🦁  | 이하연|오규영 |김정아| 김소리 | 장수연| 최장호 | 김하영|김창영 |
+|🦁  | 이하연|오규영 |김정아| 김소리 | 장수연| 최창호 | 김하영|김창영 |
 | :-: | :-: | :--: | :---: | :---: | :--: | :---: | :---: | :---: |
 | GitHub|[cocorig](https://github.com/cocorig)| [oqoqoh](https://github.com/oqoqoh) | [haileyja](https://github.com/haileyja)| [sorikikikim](https://github.com/sorikikikim)|  [Sooooyeon]( https://github.com/Sooooyeon)| [ChangHoChoi92](https://github.com/ChangHoChoi92 )|  [hangnik](https://github.com/hangnik )| [changyoungg]( https://github.com/changyoungg )|
 | Week 01</br>|  |   |    |  |  |     |  | |
