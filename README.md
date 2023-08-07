@@ -68,46 +68,40 @@
 ## 초기설정 
 
 <br/>
-1. 이 저장소를 `fork` 한다. <br/>
-2. fork해서 만들어진 레포지토리의 url을 복사해 원하는 위치에 clone한다. <br/>
 
 ```
-git clone https://github.com/cocorig/Algorithm-Study.git
+git clone 포크한레포url
+
+```
+```
+git init
+
+```
+```
+git remote add origin 원본레포url
 
 ```
 
-3. branch 생성 <br/>
-
 ```
-git branch 깃허브아이디
+git checkout -b 브랜치 이름
 ```
-
- - branch 이동
-   
-   ```
-   git switch 브랜치이름
-   
-   ```
-   
-4. commit하기  <br/>
-
-   -- commit 메세지: [주차] 문제이름 
-   
 ```
-git commit -m "[week 01] 몫 구하기 "
+git pull origin main
 ```
-5. fork한 레포지토리의 brach로 push
-   
-   ```
-   git push origin [branchName]
-   ```
-   
+```
+git switch 브랜치 이름
+```
+```
+git add .
+```
+```
+git commit -m  '[주차] 문제이름 '
 
-
-6. 원본 저장소로 `Pull Request`를 한다. 
-7. 다른 사람들의 PR을 보고 자유롭게 코드리뷰를 한다.
-
-
+> git commit -m "[week 01] 몫 구하기 "
+```
+```
+git push origin 브랜치 이름
+```
 
 
 <br/>
@@ -119,11 +113,9 @@ git commit -m "[week 01] 몫 구하기 "
 comment는 자유입니다!
 어떤 문제가 어려웠는지 회고를 작성한다면 다른 스터디원들께도 도움이 될 거 같습니다!!
 
-- PR 마감 시간
-     매일 23:59
 
 ☘️ (option)코드리뷰 하기 🙋‍♀️ 
-- 서로 칭찬해주기..?
+- 서로 칭찬해주기 & 격려해주기
 - PR에서 코드리뷰를 합니다.
 - 전체 코드 흐름을 파악한 뒤, 이 분이 어떻게 풀었을까 이해를 한 후 의견제시합니다.
 - 잘했다고 생각하는 부분 , 이렇게 하면 더 좋을 것 같다고 생각하는 부분 ,왜 이렇게 풀었는지 궁금한 부분 ,또 다른 풀이 방식 제시합니다.
