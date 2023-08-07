@@ -70,33 +70,39 @@
 <br/>
 1. 이 저장소를 `fork` 한다. <br/>
 2. fork해서 만들어진 레포지토리의 url을 복사해 원하는 위치에 clone한다. <br/>
+
 ```
 git clone https://github.com/cocorig/Algorithm-Study.git
 
 ```
+
 3. branch 생성 <br/>
+
 ```
 git branch 깃허브아이디
 ```
+
  - branch 이동
+   
    ```
    git switch 브랜치이름
    
    ```
+   
 4. commit하기  <br/>
+
    -- commit 메세지: [주차] 문제이름 
    
 ```
 git commit -m "[week 01] 몫 구하기 "
 ```
 5. fork한 레포지토리의 brach로 push
+   
    ```
    git push origin [branchName]
    ```
-플랫폼 작성법 통일:
+   
 
-[PGS] - 프로그래머스
-[DOJ] - 코딩 도장
 
 6. 원본 저장소로 `Pull Request`를 한다. 
 7. 다른 사람들의 PR을 보고 자유롭게 코드리뷰를 한다.
