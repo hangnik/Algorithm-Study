@@ -36,10 +36,11 @@
 
 ## 8월~9월 1차 일정표
 
+
 -   문제 출처 : [JavaScript 알고리즘 100일 챌린지](https://www.youtube.com/watch?v=RMmOU2u-_as&list=PLkfUwwo13dlWZxOdbvMhkzhAowaiEjuGS)
 
-|          날짜          |                                                                                                                                                        문제                                                                                                                                                        | 난이도   |     |
-| :--------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------- | :-: | ---------------- |
+|          날짜          |     문제    | 난이도   |    
+| :--------------: | :---------: | :------- |
 | Week 01</br>(23.08.07) |                <p align=left> 1️⃣ [몫 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/120805) <br> 2️⃣ [숫자 비교하기](https://school.programmers.co.kr/learn/courses/30/lessons/120807) <br> 3️⃣ [나이 출력](https://school.programmers.co.kr/learn/courses/30/lessons/120820) <br>                | 입문     |     | <br><br><br><br> |
 | Week 01</br>(23.08.08) |                     <p align=left> 1️⃣ [각도기](https://school.programmers.co.kr/learn/courses/30/lessons/120829) <br> 2️⃣ [양꼬치](https://school.programmers.co.kr/learn/courses/30/lessons/120830) <br> 3️⃣[짝수의 합](https://school.programmers.co.kr/learn/courses/30/lessons/120831) </p>                      | 입문     |     | <br><br><br><br> |
 | Week 01</br>(23.08.09) |    <p align=left> 1️⃣ [배열의 평균값](https://school.programmers.co.kr/learn/courses/30/lessons/120817) <br> 2️⃣ [머쓱이보다 키 큰 사람](https://school.programmers.co.kr/learn/courses/30/lessons/120585) <br> 3️⃣[중복된 숫자 개수](https://school.programmers.co.kr/learn/courses/30/lessons/120583) <br> </p>     | 입문     |     | <br><br><br><br> |
