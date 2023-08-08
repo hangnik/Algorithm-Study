@@ -1,4 +1,4 @@
-# Algorithm Study test
+# Algorithm Study
 
 ## ✨ 진행 방식
 
