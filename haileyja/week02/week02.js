@@ -143,7 +143,15 @@ function solution(n) {
 
 //k의 개수 
 
-
+const solution = (i, j, k) => {
+    let count = 0;
+    
+    for(let start = i; start <= j; start ++){
+        String(start).split("").forEach(el => el.includes(k) && count ++);
+    }
+    
+    return count;
+}
 
 
 
@@ -156,3 +164,4 @@ function solution(n) {
 
 
 //가까운 수 
+
