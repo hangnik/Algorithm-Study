@@ -137,6 +137,19 @@ function solution(n) {
 
 
 
+//다른 풀이
+
+function solution(n) {
+    let i = 1;
+    let f = 1;
+    while (f <= n) f*=++i;
+    return i - 1
+   
+}
+
+
+
+
 
 
 //k의 개수 
