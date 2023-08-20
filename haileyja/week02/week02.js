@@ -32,18 +32,16 @@ function solution(my_string) {
 
 function solution(rsp) {
     return Array.from(rsp).map(v => {
-        switch(+v) {
-            case 2:
-                return 0
-            case 0:
-                return 5
+        switch(v) {
+            case '2':
+                return '0'
+            case '0':
+                return '5'
             default:
-                return 2
+                return '2'
         }
     }).join('');
 }
-
-
 
 
 
@@ -68,7 +66,7 @@ function solution(numbers, direction) {
 //다른사람의 풀이 
 function solution(age) {
     let str = 'abcdefghij'
-    return Array.from(age.toString()).map(t=> str[+t]).join('');
+    return Array.from(age.toString()).map(t=> str[t]).join('');
 }
 
 
