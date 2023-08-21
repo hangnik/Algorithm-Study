@@ -6,26 +6,26 @@
 
 
 
-// function solution(numbers, direction) {
-//   let ans = [];
-//     if(direction == "right"){
-//       //  뒤의 원소를 빼서 앞으로 
+function solution(numbers, direction) {
+  let ans = [];
+    if(direction == "right"){
+      //  뒤의 원소를 빼서 앞으로 
 
-//       numbers.unshift( numbers.pop())
+      numbers.unshift( numbers.pop())
  
-//     } 
-//     else if(direction == "left"){
-//     //앞에 원소를 빼서 뒤로 
+    } 
+    else if(direction == "left"){
+    //앞에 원소를 빼서 뒤로 
   
  
-//       numbers.push(numbers.shift());
+      numbers.push(numbers.shift());
    
-//     }
-//     ans =  numbers;
-//     return ans;
-//   }
+    }
+    ans =  numbers;
+    return ans;
+  }
 
-solution([4, 455, 6, 4, -1, 45, 6] ,"left")
+console.log(solution([4, 455, 6, 4, -1, 45, 6] ,"left"));
 
 
 

@@ -5,19 +5,20 @@
 // 29423	  2
 
 // 1. 접근방식
-//  3, 6, 9의 개수를 셈
+// order을 문자형 배열로 바꿔서  3, 6, 9의 개수를 세는 방식으로 풀이함
 // order가 string이 아니라 숫자타입이기때문에 문자열로 만들어서 쪼갬
 
 function solution(order){
-  let str =  order.toString().split("").// [ '2', '9', '4', '2', '3' ]
+  let arr =  order.toString().split("").// [ '2', '9', '4', '2', '3' ]
   filter(v=> ['3','6','9'].includes(v)); 
-  return str.length;
+  return arr.length;
 }
 
 solution(29423)
-
-
-
+//filter메서드 사용해 배열의 원소를 하나하나 꺼내보면서 ['3','6','9']배열에 포함하고 있는지 확인을 함 
+// filter는 조건이 참을 때 반환하므로 arr는 [ '9', '3' ]이 들어감 -> 개수를 세야하기때문에 배열의 길이를 반환해줌
+let arr = [ '2', '9', '4', '2', '3' ].filter(v => ['3','6','9'].includes(v))
+console.log(arr);
 
 //2. 접근방식 
 function solution(order) {

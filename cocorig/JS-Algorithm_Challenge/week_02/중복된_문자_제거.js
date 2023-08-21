@@ -2,11 +2,14 @@
 
 //  my_string	              result
 // "people"	              "peol"
-// "We are the world"	  "We arthwold
+// "We are the world"	  "We arthwold"
 
 function solution(my_string) {
+  console.log(new Set(my_string));
   let setArr =[...new Set(my_string)] 
-   return  setArr.join('');
+
+  return  setArr.join('');
 }
+
 
 solution("We are the world")
