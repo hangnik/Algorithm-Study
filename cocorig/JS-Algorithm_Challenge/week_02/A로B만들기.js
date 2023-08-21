@@ -5,15 +5,16 @@
 // "olleh"	      "hello"	    1
 // "allpe"	      "apple"   	0
 
+ solution = (b, a) => Number([...b].sort().join('') === [...a].sort().join(''));
+// 같을경우 true를 반환 -> 바로 Number로 바꾸면 1 
+// function solution(before, after) {
 
-function solution(before, after) {
-
-  const Newbefore = before.split('').sort().join('');
-  const Newafter = after.split('').sort().join('');
-  console.log(Newbefore , Newafter);
-  return Newbefore === Newafter ? 1 : 0;
-
-  }
+//   const Newbefore = before.split('').sort().join('');
+//   const Newafter = after.split('').sort().join('');
+//   console.log(Newbefore , Newafter);
+//   return Newbefore === Newafter ? 1 : 0;
+ 
+//   }
 
   console.log(solution("olleh"	,"hello"));
 

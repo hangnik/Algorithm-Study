@@ -51,7 +51,7 @@ console.log(solution(	[3, 10, 28]	,20));
 
 function solution(array, n) {
   let arr = []
-  array.sort((a,b)=> a - b);
+  array.sort((a,b) => a - b);
   for(let i=0; i< array.length; i++){
   arr.push(Math.abs(n - array[i])) ; 
 } 
