@@ -3,15 +3,11 @@
 
 function solution(emergency) {
     var answer = [];
-    let arr = [];
-    let sort = emergency.sort((a, b) => (b - a))
+    // slice를 써야만 깊은 복사로 정렬된 값을 sort가 받을 수 있음
+    let sort = emergency.slice().sort((a, b) => (b - a))
     console.log(sort);
-    for (let i = 0; i < sort.length; i++) {
-        map.set([i + 1], sort[i]);
-    }
-    console.log(map);
-
-    return answer;
+    answer = emergency.map(v => sort.indexOf(v) + 1);
+    return console.log(answer);
 }
 
 
