@@ -163,6 +163,7 @@ function solution(before, after) {
     }
     return 0;
 }
+// 다른 사람의 풀이
 
 
 
@@ -216,8 +217,8 @@ function solution(i, j, k) {
     return a.split(k).length - 1;
 }
 
-// 가까운 수 => 어렵다....
-// 나의 정답 - 끝까지 못 풀었다..ㅠㅠ
+// 가까운 수
+// 나의 정답 - 해결 못함
 function solution(array, n) {
     const sub = array.map(v => {
         return Math.abs(v - n);
@@ -225,7 +226,7 @@ function solution(array, n) {
 
     return sub.indexOf(Math.min([...sub]));
 }
-// 강사님 정답
+// 강사님 정답 - 
 function solution(array, n) {
     return array[
         array
@@ -233,4 +234,36 @@ function solution(array, n) {
             .map((v) => Math.abs(v - n))
             .indexOf(Math.min(...array.map((v) => Math.abs(v - n))))
     ];
+}
+// [1, 2, 4] 3   0을 기준으로 비교하는 방법도 있음 
+
+// 인덱스를 리턴하는데.. 
+// sort 정렬을 하면 인덱스가 바뀌게되니까
+
+
+// 규영님 코드
+
+function solution(array, n) {
+    let diff = 0; //두 수의 차이값
+    let result = 0; //결과로 나오ㅏ야하는 값
+
+    array.forEach((num, i) => {
+        let abs = Math.abs(n - num);
+
+        if (i === 0) {
+            diff = abs;
+            result = num;
+            return;
+        }
+
+        if (diff >= abs) {
+            if (diff === abs) {
+                result > num ? (result = num) : null;
+            } else {
+                diff = abs;
+                result = num;
+            }
+        }
+    });
+    return result;
 }
