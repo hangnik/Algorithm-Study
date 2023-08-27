@@ -3,14 +3,17 @@
 
 function solution(i, j, k) {
     let answer = 0;
-
+    let arr = [];
     for (let n = i; n <= j; n++) {
         if (n.toString().includes(k.toString()))
             answer += n
                 .toString()
                 .split("")
                 .filter((str) => str === k.toString()).length;
+        arr.push(answer);
     }
+    console.log(arr);
+
     return console.log(answer);
 }
 
