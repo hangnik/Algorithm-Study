@@ -60,49 +60,29 @@
 
 <br/>
 
-## 초기설정
+##  ⚙️  초기설정
 
+[git fork, branch, pr 및 상태관리 참고자료](https://ohcrong.notion.site/git-fork-branch-pr-489e22a5dfce4afc9992b7020c43d794) 
 <br/>
 
-```
-git clone 포크한레포url
+##  🎯  작업 시작 전  원본 저장소의 최신 상태 반영하기
 
-```
+<실행 명령어 정리>
 
-```
-git init
-
-```
-
-```
-git remote add origin 원본레포url
-
+``` 
+git switch main
 ```
 
 ```
-git checkout -b 브랜치 이름
+git fetch upstream
 ```
 
 ```
-git pull origin main
+git merge upstream/main
 ```
 
 ```
-git switch 브랜치 이름
-```
-
-```
-git add .
-```
-
-```
-git commit -m  '[주차] 문제이름 '
-
-> git commit -m "[week 01] 몫 구하기 "
-```
-
-```
-git push origin 브랜치 이름
+git push origin main
 ```
 
 <br/>
