@@ -62,7 +62,8 @@
 
 ##  ⚙️  초기설정
 
-[git fork, branch, pr 및 상태관리 참고자료](https://ohcrong.notion.site/git-fork-branch-pr-489e22a5dfce4afc9992b7020c43d794) 
+[git fork, branch, pr 및 상태관리 참고자료](https://ohcrong.notion.site/git-fork-branch-pr-489e22a5dfce4afc9992b7020c43d794)
+-필자([oqoqoh](https://github.com/oqoqoh))
 <br/>
 
 ##  🎯  작업 시작 전  원본 저장소의 최신 상태 반영하기
