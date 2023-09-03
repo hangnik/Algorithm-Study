@@ -11,11 +11,11 @@ const solution = S => {
 		for (let j = 1; j < S.length; j++) { 
 			let temp = Math.abs(S[i] - S[j]); 
 			if (temp < min && S[i] != S[j]) { 
-				result = [S[i], S[j]]  
+				result = [S[i], S[j]].sort()  
 			}
 		}
 	}
-	console.log(result)
+	console.log(`(${result[0]}, ${result[1]})`)
 }
 
 let arr = [1, 3, 4, 8, 13, 17, 20]
