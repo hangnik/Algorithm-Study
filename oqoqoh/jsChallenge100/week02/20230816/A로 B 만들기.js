@@ -14,3 +14,5 @@ function solution(before, after) {
     if (afterArray.length === 0) return 1;
     else return 0;
 }
+
+//let solution = (b, a) => Number([...b].sort().join('') === [...a].sort().join(''));
