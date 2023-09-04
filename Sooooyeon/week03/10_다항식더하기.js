@@ -21,15 +21,46 @@
 // "3x + 7 + x"	   "4x + 7"
 // "x + x + x"	   "3x"
 
-const polynomial = "3x + 7 + x"
-const x = [];
-const num = [];
+// const polynomial = "3x + 7 + x"
+// const x = [];
+// const num = [];
 // const arr = polynomial.split(" ")
 // console.log(arr)
 
-polynomial.split(" ").map(v => { if (v.includes('x')) { x.push(v) } })
-console.log(parseInt(x.join("")))
+// polynomial.split(" ").map(v => { if (v.includes('x')) { x.push(v) } })
+// console.log(parseInt(x.join("")))
 
+
+
+const polynomial = "3x + 7 + x";
+const arr = polynomial.split(" + ");
+const xNum = arr.filter(v => v.includes("x")).map(v => v.replace('x', '') || '1').reduce((a, c) => a + parseInt(c, 10), 0);
+// || '1' 이 없을경우 x가 제거되고 빈 문자열로 나타남 [ '3', '' ]
+// 빈문자열에 1을 넣어준다는 의미가 아닐까 추측.
+
+console.log(xNum);
+
+const num = arr.filter(v => !isNaN(v)).reduce((a, c) => a + parseInt(c, 10), 0);
+
+console.log(num);
+
+
+function solution(polynomial) {
+    const arr = polynomial.split(" + ");
+    const xNum = arr
+        .filter(n => n.includes("x"))
+        .map(n => n.replace('x', '') || '1')
+        .reduce((acc, cur) => acc + parseInt(cur, 10), 0);
+    const num = arr
+        .filter(n => !isNaN(n))
+        .reduce((acc, cur) => acc + parseInt(cur, 10), 0);
+
+    let answer = [];
+    if (xNum) answer.push(`${xNum === 1 ? "" : xNum}x`);
+    if (num) answer.push(num);
+
+    return answer.join(" + ");
+}
 
 
 
