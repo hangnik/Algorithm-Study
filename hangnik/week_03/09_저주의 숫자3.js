@@ -6,4 +6,5 @@ function solution(n) {
   return n;
 }
 
+// 다시 풀어보기
 solution(5);
