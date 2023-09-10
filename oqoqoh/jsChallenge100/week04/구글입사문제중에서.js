@@ -7,7 +7,9 @@ let count = 0;
 
 const solution = () => {
     for (let i = 1; i <= 10000; i++) {
+        // 숫자를 string으로 변환 후
         let arr = i.toString().split('');
+        // 한글자씩 8이 있는지 체크 후 count 증가
         arr.forEach((letter) => {
             letter === '8' && count++;
         });

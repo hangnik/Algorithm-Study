@@ -10,12 +10,15 @@ let distance = 0;
 arr.forEach((num, i) => {
     arr2.forEach((num2, j) => {
         if (i < j) {
+            // 같은 숫자를 제외한 다음 숫자부터 진행
             //console.log(`${num} -> ${num2}`);
 
             if (distance === 0) {
+                // 초기 차이값이 없을시 세팅
                 distance = Math.abs(num - num2);
                 //console.log('distance0 : ', distance);
             } else {
+                // 가장 작은 차이값과 비교 후 갱신
                 if (distance >= Math.abs(num - num2)) {
                     distance = Math.abs(num - num2);
                     result.push(`(${num},${num2})`);
