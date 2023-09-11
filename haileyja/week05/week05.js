@@ -12,6 +12,9 @@ function solution(n) {
 
 
 
+
+
+
 //자릿수 더하기 
 function solution(N) {
   
@@ -22,7 +25,8 @@ function solution(N) {
         sum += parseInt(strN[i]);
     }
 
-    return sum;
+
+    return sum; 
 }
 
-console.log(solution(123));
+console.log(solution(123)); 
